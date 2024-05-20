@@ -1,0 +1,39 @@
+ 
+
+/* تحديد عرض الجدول وتوزيعه ليأخذ المساحة المتبقية */
+.table_courses {
+   direction: rtl;
+    margin-top: 5px;
+    margin-left: 30px;
+     
+ }
+
+/* Style for the input and button Space */
+.table_courses .ant-space {
+  margin-bottom: 16px;
+}
+
+/* Style for the table */
+.table_courses .ant-table {
+  background-color: rgba(255, 255, 255,1); /* خلفية شفافة للجدول */
+}
+
+/* Style for the table header */
+.table_courses .ant-table-thead > tr > th {
+  background-color: #ffffff; /* لون الخلفية الرمادي الفاتح للعناوين */
+}
+
+/* Style for the table body */
+.table_courses .ant-table-tbody > tr > td {
+  padding: 8px 16px; /* تعديل الهوامش حسب الحاجة */
+}
+
+/* Style for the table rows */
+.table_courses .ant-table-row {
+  background-color: rgba(255, 255, 255,1);  /* لون الخلفية الرمادي الغامق للصفوف */
+}
+
+/* Style for the table rows when hovered */
+.table_courses .ant-table-row:hover {
+  background-color: #4d4d4df1 !important; /* لون الخلفية الرمادي الفاتح عند التحويم */
+}

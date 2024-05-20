@@ -1,0 +1,25 @@
+.Cardsadmin {
+  display: flex;
+  gap: 10px;
+  direction: rtl;
+  margin-left: 50px;
+}
+.parentContaineradmin{
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Cardsadmin{
+    flex-direction: column;
+  }
+  .parentContaineradmin{
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cardsadmin{
+    width: 90%;
+  }
+}

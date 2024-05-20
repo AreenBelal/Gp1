@@ -1,0 +1,27 @@
+.MuiTableadminRow-root > * {
+  padding: 10px;
+}
+
+.MuiTableadminRow-root.MuiTableadminRow-head > * {
+  font-weight: bold !important;
+  color:whitesmoke !important;
+}
+
+.Tableadmin td,
+th {
+  border: none !important;
+}
+
+.Tableadmin:first-child {
+  border-radius: 0.7rem !important;
+}
+.statusadmin {
+  padding: 8px;
+  border-radius: 9px;
+}
+
+.Detailsadmin {
+  color: #5299b556 !important;
+}
+
+ 

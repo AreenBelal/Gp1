@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "bx bx-user",
+    "content": "الصفحة الشخصيّة",
+    "route": "/teacher/dashboard"
+  },
+
+  {
+    "icon": "bx bx-cog",
+    "content": "الإعدادات",
+    "route": "#"
+  },
+  {
+    "icon": "bx bx-log-out-circle bx-rotate-180",
+    "content": "تسجيل خروج",
+    "route": "/"
+  }
+]

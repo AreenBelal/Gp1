@@ -1,0 +1,70 @@
+/* Rewrite the CSS code with a more modern and fun style */
+
+/* Quiz container styles */
+.quiz-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add question button styles */
+.add-question-button {
+  margin-bottom: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #28a745; /* Green color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-question-button:hover {
+  background-color: #218838; /* Darker shade of green on hover */
+}
+
+/* Questions list styles */
+.questions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Question item styles */
+.question-item {
+  margin-bottom: 30px;
+}
+
+/* Question container styles */
+.question-container {
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Option styles */
+.option {
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.option.selected {
+  border-color: #007bff; /* Blue border color */
+  background-color: #007bff;
+  color: white;
+}
+
+.option:hover {
+  border-color: #007bff; /* Blue border color on hover */
+}

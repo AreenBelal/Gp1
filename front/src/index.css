@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800;900&display=swap");
+@import "./techear/boxicons-2.0.7/css/boxicons.min.css";
+@import "./techear/css/grid.css";
+@import "./techear/css/theme.css";
+@import "./techear/css/index.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for main sidebar to fixed */
+.backdrop-blur-sm {
+  position: fixed !important;
+  inset: unset !important;
+  height: 0 !important;
+}
+/* end */
+
+.design {
+  background-color: #fdf8ee;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+.icon_style_darkMode {
+  @apply dark:text-darkMode-dark50 dark:hover:text-darkMode-dark300 duration-200;
+}
+.inputStyle {
+  @apply !border !border-gray-300 bg-darkMode-dark50 text-gray-900 shadow-sm shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 dark:focus:!border-darkMode-dark50 focus:!border-t-gray-900 dark:focus:!border-t-darkMode-dark50 focus:ring-gray-900/10 dark:focus:ring-darkMode-dark50;
+}
+.swal2-container.swal2-center.swal2-backdrop-show {
+  z-index: 90000000000000;
+}
+
+.select-arrow-left .ant-select-selector::after {
+  content: "▼"; /* أو أي رمز آخر */
+  margin-left: 8px; /* تحديد المسافة من اليسار حسب الحاجة */
+}
+
+.grid.place-items-center.absolute.w-5.h-5.text-blue-gray-400.rotate-0.transition-all {
+  @apply right-[90%] md:right-[92%] lg:right-[95%] dark:text-darkMode-dark50;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+button[placeholder="حدد الخيار الصحيح"] span {
+  left: 90% !important;
+}
+button[placeholder="اختر الفرع"] span {
+  left: 95% !important;
+}
+
+/*  CSS للتابلت */
+@media screen and (max-width: 1024px) {
+  button[placeholder="حدد الخيار الصحيح"] span {
+    left: 85% !important;
+  }
+}
+
+/*  CSS للهواتف المحمولة */
+@media screen and (max-width: 767px) {
+  button[placeholder="حدد الخيار الصحيح"] span {
+    left: 78% !important;
+  }
+}
+
+/*  CSS للهواتف المحمولة */
+@media screen and (max-width: 550px) {
+  button[placeholder="حدد الخيار الصحيح"] span {
+    left: 69% !important;
+  }
+}

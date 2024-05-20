@@ -1,0 +1,69 @@
+/* QuestionForm.css */
+
+/* تعديل الألوان */
+.school-theme {
+  background-color: var(--second-bg) /* لون خلفية النموذج - أخضر فاتح */
+}
+ 
+ 
+
+.school-label {
+  font-weight: bold; /* تحديد النصوص بالخط العريض */
+  color: var(--second-color);
+}
+
+.school-input {
+  border: 1px solid ;
+}
+
+.school-option {
+  margin-bottom: 5px; /* تباعد بين الخيارات */
+}
+
+.school-btn {
+  margin-top: 10px; /* تباعد بين الأزرار وباقي العناصر */
+}
+
+/* تعديل الألوان لوحة الإعلامات */
+.alert {
+  margin-top: 10px; /* تباعد بين الإعلامات والعناصر الأخرى */
+}
+
+.alert-info {
+  background-color: #4caf50; /* لون الإعلامات التنبيهية - أخضر فاتح */
+}
+
+.alert-warning {
+  background-color: #ffc107; /* لون الإعلامات التحذيرية - أصفر */
+}
+
+.alert-danger {
+  background-color: #ff5722; /* لون الإعلامات الخطيرة - برتقالي */
+}
+
+/* تعديل الألوان للعناصر النائية */
+.all-questions-panel {
+  background-color: #ffffff; /* لون خلفية لوحة الأسئلة */
+  border-radius: 5px;
+  border-color: #ffffff;
+  padding: 10px; /* تباعد داخلي لوحة الأسئلة */
+}
+
+/* تعديل الألوان للأزرار */
+.btn {
+  border-radius: 5px; /* حدود مستديرة للأزرار */
+}
+
+.btn-success {
+  color: #fff; /* لون نص الأزرار */
+  background-color: #4caf50; /* لون خلفية الأزرار - أخضر */
+}
+
+/* تعديل الألوان عامة */
+.row {
+  justify-content: center; /* محاذاة المحتوى إلى الوسط في الصف */
+}
+
+.col-md-6 {
+  margin-top: 20px; /* تباعد بين الأعمدة */
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "display_name": "لوحة التحكم",
+    "route": "/teacher/dashboard",
+    "icon": " "
+  },
+  {
+    "display_name": " تفاصيل الواجبات ",
+    "route": "/techear/hwDetailsTable/hwfinaldetails",
+    "icon": " "
+  },
+  {
+    "display_name": "الطلاب والدورات",
+    "route": "/techear/table_coursesstudent/courseDetails",
+    "icon": " "
+  },
+  {
+    "display_name": " الطلاب والامتحانات",
+    "route": "/techear/gradTablestudent/gradeDetails",
+    "icon": " "
+  },
+  {
+    "display_name": "وضع اسئلة للاختبار القصير",
+    "route": "/techear/techputquiz/putQuestion",
+    "icon": " "
+  },
+  {
+    "display_name": "رفع واجب للطلبة",
+    "route": "/techear/hwtech/hwput",
+    "icon": " "
+  },
+  {
+    "display_name": "اجندة المعلم",
+    "route": "/techear/calendertech/sechfinal",
+    "icon": " "
+  },
+
+  {
+    "display_name": "رفع الحصص الصفيّة",
+    "route": "/techear/lec/lecfinal",
+    "icon": " "
+  }
+]

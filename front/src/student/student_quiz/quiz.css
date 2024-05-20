@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+ 
+.quiz00stud {
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+
+.quiz-containerstud {
+  max-width: 400px;
+  min-width: 200px;
+  max-height: 500px;
+  border-radius: 4px;
+  margin: 60px 10px 50px 850px; /* الهوامش: أعلى - تلقائي - أعلى - يمين */
+   text-align: right;
+  direction: rtl;
+  
+}
+
+.quiz-containerstud .active-question-nostud {
+  font-size: 32px;
+  font-weight: 500;
+  color: #f2a757;
+}
+
+.quiz-containerstud .total-questionstud {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e0dee3;
+}
+
+.quiz-containerstud h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.quiz-containerstud ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quiz-containerstud ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.quiz-containerstud ul .selected-answerstud {
+  background:#f38d2092;
+  border: 1px solid #ee6d0bae;
+}
+
+.quiz-containerstud button {
+  background: linear-gradient(90.04deg, #c34712 0.03%, #ff722c 99.96%);
+  border-radius: 9px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quiz-containerstud button:disabled {
+  background: #e7e8e9;
+  color: #3d3d3e;
+  cursor: not-allowed;
+}
+
+.flex-rightstud {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resultstud h3 {
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.resultstud p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.resultstud p span {
+  color: #9d390b;
+  font-size: 22px;
+}
+
+.active-question-nostud, .total-questionstud {
+  font-size: 1.2em;
+}
+ 
+
+.selected-answerstud {
+  background-color: #1155ae;
+  color: #fff;
+}
+ 
+.resultstud {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+
+.resultstud p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+ 
+
+ 

@@ -1,0 +1,119 @@
+
+.note1 {
+  direction: rtl;
+    height: 100%;
+    margin: 0;
+    color: #353333;
+  }
+  
+ 
+  
+  .container {
+    direction: rtl;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .notes-list{
+    direction: rtl;
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 1;
+  }
+  
+  
+  .note.new{
+    direction: rtl;
+    background-color: transparent;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  
+  textarea::placeholder {
+    color: black; /* تغيير لون النص للبليس هولدر */
+}
+
+textarea {
+    padding: 5px;
+    border: none;
+    resize: none;
+    background-color: #a12e7389;
+    border-style: none;
+    border-color: transparent;
+    overflow: auto;
+    color: #000000;
+    border-radius: 8px; /* زيادة جمالية الحواف */
+    width: 300px;
+    font-size: 14pt;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+  
+  
+  .note {
+    direction: rtl;
+    background-color: #73b1ddac;
+    min-height: 170px;
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-line;
+    color: black;
+  }
+  
+  .save {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-right: 280px;
+    border: 2px solid #a12e9491; /* لون الحدود */
+    border-radius: 20px; /* شكل الحواف */
+    background-color: #a12e564a; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease; /* تأثير التحويل */
+}
+
+.save:hover {
+  background-color: #a12e7389; /* لون الخلفية */
+  color: #f5f5f54a; /* لون النص عند التحويل */
+    border-color: #a12e564a; /* لون الحدود عند التحويل */
+    cursor: pointer;
+}
+
+  
+  .note-footer{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+
+  .header {
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+  }
+  
+ 
+  
+  h1 {
+    font-size: 30px;
+   color: #9c9c9c;
+ 
+  }
+  
+  
