@@ -5,6 +5,7 @@ import TeacherSidebar from "./TeacherSidebar";
 import TeacherResponsiveSidebar from "./TeacherResponsiveSidebar";
 import UploadingClassroomSessions from "./UploadingClassroomSessions";
 import UploadingExam from "./UploadingExam";
+import TeacherDashboardHome from "./TeacherDashboardHome";
 function TeacherDashboard() {
   const [openSidebarRight, setOpenSidebarRight] = useState(false);
   const openDrawerRight = () => setOpenSidebarRight(true);
@@ -36,6 +37,13 @@ function TeacherDashboard() {
               showItemDashBoard={showItemDashBoard}
               setShowItemDashBoard={setShowItemDashBoard}
             />
+          </div>
+          <div
+            className={`${
+              showItemDashBoard === "home" ? "block" : "hidden"
+            } w-full lg:w-[75%] xl:w-[78%] xxl:w-[81%]`}
+          >
+            <TeacherDashboardHome />
           </div>
           <div
             className={`${

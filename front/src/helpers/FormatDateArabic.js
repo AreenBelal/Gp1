@@ -1,7 +1,6 @@
 import React from "react";
 
 const FormatDateArabic = ({ createdAt }) => {
-  console.log(createdAt);
   const date = new Date(createdAt);
   const options = {
     year: "numeric",
@@ -9,7 +8,6 @@ const FormatDateArabic = ({ createdAt }) => {
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
-    second: "numeric",
     hour12: true,
     weekday: "long",
     timeZone: "Africa/Cairo",

@@ -55,8 +55,8 @@ const App = () => {
 
   return (
     <div className="dark:bg-darkMode-dark950 ">
-      <ScrollToTop />
       <UsersTokensManagement />
+      <ScrollToTop />
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<HomePage />} />

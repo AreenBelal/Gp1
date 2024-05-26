@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { useSelector } from "react-redux";
-// import AdminNotificationsMenu from "./AdminNotificationsMenu";
+import TeacherNotificationsMenu from "./TeacherNotificationsMenu";
 import { IoMenuOutline } from "react-icons/io5";
 
 const TeacherNavbar = ({ openDrawerRight }) => {
@@ -28,7 +28,7 @@ const TeacherNavbar = ({ openDrawerRight }) => {
           {teacherLoading ? <Spinner color="green" /> : teacherData?.fullName}
         </Typography>
         <div className="ml-auto flex gap-1 md:mr-4">
-          {/* <AdminNotificationsMenu /> */}
+          <TeacherNotificationsMenu />
         </div>
         <div
           onClick={openDrawerRight}

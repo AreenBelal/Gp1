@@ -30,7 +30,6 @@ const Courses = ({ updateCoursesInCart, setUpdateCoursesInCart }) => {
   const { coursesData, coursesLoading } = useSelector(
     (state) => state.allCourses
   );
-  console.log(coursesData);
   const { pathname } = useLocation();
 
   const { studentData, studentLoading } = useSelector(
@@ -85,7 +84,6 @@ const Courses = ({ updateCoursesInCart, setUpdateCoursesInCart }) => {
   const stripePromise = loadStripe(
     process.env.REACT_APP_PUBLIC_STRIPE_PUBLISHABLE_KEY
   );
-  console.log(process.env.REACT_APP_PUBLIC_STRIPE_PUBLISHABLE_KEY);
   const handleCheckOut = async (course) => {
     toast.success("Please wait, preparing the payment page.");
     try {
@@ -100,6 +98,7 @@ const Courses = ({ updateCoursesInCart, setUpdateCoursesInCart }) => {
             course,
             courseId: course._id,
           },
+          adId: course.ad._id,
           email: studentData.email,
           endPoint: pathname,
           mode: false,

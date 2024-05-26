@@ -38,7 +38,7 @@ const Nav = () => {
   const { studentData, studentLoading } = useSelector(
     (state) => state.singleStudent
   );
-  console.log(studentData);
+  console.log("nav studentData: ", studentData);
 
   return (
     <div

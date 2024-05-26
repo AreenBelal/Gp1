@@ -7,6 +7,7 @@ import { base_url } from "../../data/apis";
 export const getSingleStudent = createAsyncThunk(
   "getSingleStudent",
   async (id, ThunkAPI) => {
+    console.log(id);
     const { rejectWithValue } = ThunkAPI;
     const option = {
       method: "GET",

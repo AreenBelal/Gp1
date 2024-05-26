@@ -15,6 +15,10 @@ import { allAds } from "./functionality/ads/allAdsSlice";
 import { singleStudent } from "./users/students/singleStudentSlice";
 import { allCourses } from "./functionality/courses/allCoursesSlice";
 import { allCoursesInCart } from "./functionality/cart/allCoursesInCartSlice";
+import { allTeacherNotifications } from "./users/teachers/allTeacherNotificationsSlice";
+import { allStudentNotifications } from "./users/students/allStudentNotificationsSlice";
+import { allOrdersForSingleStudent } from "./users/students/orders/allOrdersForSingleStudentSlice";
+import { socketIo } from "./functionality/socketIoSlice";
 
 const persistConfig = {
   key: "root",
@@ -29,15 +33,21 @@ const rootReducer = combineReducers({
   singleTeacher,
   singleOwner,
   allTeachers,
+  allTeacherNotifications,
   allAdminNotifications,
   allAds,
   singleStudent,
+  allStudentNotifications,
 
   //
   allCourses,
+  allOrdersForSingleStudent,
 
   //
   allCoursesInCart,
+
+  // socketIo
+  socketIo,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

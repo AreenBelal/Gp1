@@ -10,6 +10,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutAuth } from "./system-redux/users/auth/authSlice";
+import { setSocketConnection } from "./system-redux/functionality/socketIoSlice";
 
 const DropDownAvatarMenu = ({ role, image }) => {
   const dispatch = useDispatch();
@@ -101,7 +102,10 @@ const DropDownAvatarMenu = ({ role, image }) => {
         <hr className="my-2 border-blue-gray-50" />
         <MenuItem
           className="flex items-center gap-2 "
-          onClick={() => dispatch(logoutAuth())}
+          onClick={() => {
+            dispatch(logoutAuth());
+            dispatch(setSocketConnection(null));
+          }}
         >
           <svg
             width="16"

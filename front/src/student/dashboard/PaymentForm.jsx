@@ -50,7 +50,7 @@ const PaymentForm = () => {
     },
     {
       id: 2,
-      name: "تكاليف الشحن",
+      name: "مصاريف إدارية",
       around: 20 + " ₪",
       color: "",
     },
@@ -81,6 +81,7 @@ const PaymentForm = () => {
           courses: coursesInCartData,
           email: studentData.email,
           endPoint: pathname,
+          mode: true,
         },
         config
       );

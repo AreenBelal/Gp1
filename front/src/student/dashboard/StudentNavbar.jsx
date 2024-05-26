@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Navbar, Typography, Spinner, Badge } from "@material-tailwind/react";
 import { useSelector } from "react-redux";
 import { IoMenuOutline } from "react-icons/io5";
-// import AdminNotificationsMenu from "./AdminNotificationsMenu";
+import StudentNotificationsMenu from "./StudentNotificationsMenu";
 import { LuShoppingCart } from "react-icons/lu";
 
 const StudentNavbar = ({ openDrawerRight, setShowItemDashBoard }) => {
@@ -25,7 +25,9 @@ const StudentNavbar = ({ openDrawerRight, setShowItemDashBoard }) => {
             {studentLoading ? <Spinner color="green" /> : studentData?.fullName}
           </Typography>
         </div>
-        <div className="">{/* <AdminNotificationsMenu /> */}</div>
+        <div className="">
+          <StudentNotificationsMenu />
+        </div>
         {/* add to cart */}
         <div
           onClick={() => {

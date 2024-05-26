@@ -5,7 +5,7 @@ const Stripe = require("stripe");
 
 const createChechoutSession = asyncWrapper(async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const { courses, course, email, endPoint, mode } = req.body;
+  const { courses, course, email, endPoint, mode, adId } = req.body;
 
   let totalPrice = 0;
 
@@ -43,7 +43,7 @@ const createChechoutSession = asyncWrapper(async (req, res, next) => {
       mode: "payment",
       success_url: `${process.env.BASE_URL_FRONTEND}${
         endPoint || ""
-      }/success?session_id={CHECKOUT_SESSION_ID}&mode=${true}&total=${totalPrice}`,
+      }/success?session_id={CHECKOUT_SESSION_ID}&mode=${true}`,
       cancel_url: `${process.env.BASE_URL_FRONTEND}${endPoint || ""}`,
       metadata: {
         email,
@@ -58,16 +58,6 @@ const createChechoutSession = asyncWrapper(async (req, res, next) => {
               currency: "ILS",
             },
             display_name: "مصاريف إدارية",
-            delivery_estimate: {
-              minimum: {
-                unit: "مصاريف إدارية",
-                value: 1,
-              },
-              maximum: {
-                unit: "مصاريف إدارية",
-                value: 1,
-              },
-            },
           },
         },
       ],
@@ -113,7 +103,7 @@ const createChechoutSession = asyncWrapper(async (req, res, next) => {
         endPoint || ""
       }/success?session_id={CHECKOUT_SESSION_ID}&mode=${false}&course=${
         course.courseId
-      }&total=${totalPrice}`,
+      }&total=${totalPrice.toString()}&adId=${adId}`,
       cancel_url: `${process.env.BASE_URL_FRONTEND}${endPoint || ""}`,
       metadata: {
         email,
@@ -128,16 +118,6 @@ const createChechoutSession = asyncWrapper(async (req, res, next) => {
               currency: "ILS",
             },
             display_name: "مصاريف إدارية",
-            delivery_estimate: {
-              minimum: {
-                unit: "business_day",
-                value: 1,
-              },
-              maximum: {
-                unit: "business_day",
-                value: 1,
-              },
-            },
           },
         },
       ],
